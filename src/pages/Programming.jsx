@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Projectcard from "../components/Projectcard";
 import Bg from "../assets/images/Programmingbg.png";
 import { programmingprojects } from "../data";
@@ -6,6 +6,12 @@ import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "akar-icons";
 const Programming = () => {
+  useEffect(() => {
+    const timer = setTimeout(() => window.scrollTo(0, 0), 500);
+    return () => {
+      clearTimeout(timer);
+    };
+  }, []);
   return (
     <div className="uxdesign-container">
       <img src={Bg} alt=" " className="myworkbg" data-aos="fade-down"/>
