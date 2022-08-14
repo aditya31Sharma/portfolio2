@@ -25,7 +25,7 @@ const Navigationbar = () => {
   useEffect(() => {
     const timer = setTimeout(() => setFixednav(true), 3000);
     const timer2 = setTimeout(() => window.scrollTo(0, 0), 2000);
-    
+
     return () => {
       clearTimeout(timer);
       clearTimeout(timer2);
@@ -44,16 +44,40 @@ const Navigationbar = () => {
           <img src={Menuicon} alt="Menu" />
         </button>
         <div className="links-container smaller-screen-nav">
-          <Link to="/" className="link">
+          <Link
+            to="/"
+            className="link"
+            onClick={() => {
+              setNavmenu(false);
+            }}
+          >
             Home
           </Link>
-          <Link to="/myworks" className="link">
+          <Link
+            to="/myworks"
+            className="link"
+            onClick={() => {
+              setNavmenu(false);
+            }}
+          >
             Have a glance at my work?
           </Link>
-          <Link to="/about" className="link">
+          <Link
+            to="/about"
+            className="link"
+            onClick={() => {
+              setNavmenu(false);
+            }}
+          >
             Wanna know more about me?
           </Link>
-          <Link to="/contactme" className="link">
+          <Link
+            to="/contactme"
+            className="link"
+            onClick={() => {
+              setNavmenu(false);
+            }}
+          >
             Contact me
           </Link>
         </div>
@@ -70,38 +94,52 @@ const Navigationbar = () => {
           <Cross strokeWidth={2} size={24} className="close-icon" />
         </button>
         <div className="links-container smaller-screen-nav">
-          <a href={sociallinks[0].link} className="link" target="blank">
+          <a href={sociallinks[0].link} className="link" target="blank" onClick={() => {
+            setConnectmenu(false);
+          }}>
             <LinkedinBoxFill size={24} className="link-icon" />
             <p>{sociallinks[0].label}</p>
           </a>
-          <a href={sociallinks[1].link} className="link" target="blank">
+          <a href={sociallinks[1].link} className="link" target="blank" onClick={() => {
+            setConnectmenu(false);
+          }}>
             <Envelope size={24} className="link-icon" />
             <p>{sociallinks[1].label}</p>
           </a>
-          <a href={sociallinks[2].link} className="link" target="blank">
+          <a href={sociallinks[2].link} className="link" target="blank" onClick={() => {
+            setConnectmenu(false);
+          }}>
             <BehanceFill size={24} className="link-icon" />
             <p>{sociallinks[2].label}</p>
           </a>
-          <a href={sociallinks[3].link} className="link" target="blank">
+          <a href={sociallinks[3].link} className="link" target="blank" onClick={() => {
+            setConnectmenu(false);
+          }}>
             <DribbbleFill size={24} className="link-icon" />
             <p>{sociallinks[3].label}</p>
           </a>
-          <a href={sociallinks[4].link} className="link" target="blank">
+          <a href={sociallinks[4].link} className="link" target="blank" onClick={() => {
+            setConnectmenu(false);
+          }}>
             <InstagramFill size={24} className="link-icon" />
             <p>{sociallinks[4].label}</p>
           </a>
-          <a href={sociallinks[5].link} className="link" target="blank">
+          <a href={sociallinks[5].link} className="link" target="blank" onClick={() => {
+            setConnectmenu(false);
+          }}>
             <FacebookFill size={24} className="link-icon" />
             <p>{sociallinks[5].label}</p>
           </a>
-          <a href={sociallinks[6].link} className="link" target="blank">
+          <a href={sociallinks[6].link} className="link" target="blank" onClick={() => {
+            setConnectmenu(false);
+          }}>
             <WhatsappFill size={24} className="link-icon" />
             <p>{sociallinks[6].label}</p>
           </a>
         </div>
       </div>
 
-      <nav className={`${fixednav &&'fixednav'}`}>
+      <nav className={`${fixednav && "fixednav"}`}>
         <Container className="container">
           <button
             type="button"
