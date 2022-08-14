@@ -146,6 +146,7 @@ const Navigationbar = () => {
             className="menu-icon"
             onClick={() => {
               setNavmenu(true);
+              setConnectmenu(false);
             }}
           >
             <img src={Menuicon} alt="Menu" />
@@ -160,6 +161,7 @@ const Navigationbar = () => {
             className="connect-icon"
             onClick={() => {
               setConnectmenu(true);
+              setNavmenu(false);
             }}
           >
             <img src={Connecticon} alt="Connect" />
