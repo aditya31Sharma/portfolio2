@@ -1622,7 +1622,7 @@ footer {
     background: linear-gradient(45deg, #ffffff00, #ffffff10, #ffffff00);
     border: 2px solid #ffffff20;
     padding: 2rem;
-    border-radius: 20px;
+    border-radius: 24px;
   }
   .skill-card {
     width: 100%;
@@ -2035,7 +2035,7 @@ footer {
     padding: 12px;
     font-size: 1rem;
   }
-  .full-card,.viewresumecard,.sociallinkscard{
+  .full-card,.viewresumecard,.sociallinkscard,.dp-container img, .ux-design-portfolio-container,.visual-design-portfolio-container, .programming-portfolio-container,.actual-skills-container{
     border-radius: 12px;
   }
   .full-card::after,.viewresumecard::after{
