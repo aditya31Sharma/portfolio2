@@ -1,5 +1,1 @@
-# Redirects from what the browser requests to what we serve
-/home              /
-/myworks  /aboutme
-/contactme             /uxdesign
-/programming            https://adityasharma.netlify.app
+/* /index.html 200
