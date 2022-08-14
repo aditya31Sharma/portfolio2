@@ -446,17 +446,18 @@ footer {
 
 .skills-container {
   width: 100vw;
+  padding-top: 200px;
   position: relative;
 }
 .pentool {
   position: absolute;
   right: 0;
-  top: 0;
+  bottom: 0;
 }
 .shapes {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 100px;
 }
 .skills-content-container {
   flex-direction: column;
@@ -1031,7 +1032,6 @@ footer {
   gap: 24px;
 }
 
-
 .full-card {
   border-radius: 24px;
   padding: 32px;
@@ -1046,7 +1046,14 @@ footer {
   /* width: 500px; */
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 25%);
 }
-.full-card:active,.full-card:focus,.full-card:hover,.full-card:visited,.viewresumecard:active,.viewresumecard:hover,.viewresumecard:hover,.viewresumecard:visited{
+.full-card:active,
+.full-card:focus,
+.full-card:hover,
+.full-card:visited,
+.viewresumecard:active,
+.viewresumecard:hover,
+.viewresumecard:hover,
+.viewresumecard:visited {
   color: white;
 }
 .full-card::after {
@@ -1072,14 +1079,14 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: -100px;
-  grid-column-start:1 ;
+  grid-column-start: 1;
   grid-column-end: 3;
 }
 .mailmecard {
   background: url("https://images.unsplash.com/photo-1643845892686-30c241c3938c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1888&q=80");
   background-repeat: no-repeat;
   background-size: cover;
-  grid-column-start:3 ;
+  grid-column-start: 3;
   grid-column-end: 5;
   /* background-position-y: -200px; */
 }
@@ -1126,7 +1133,7 @@ footer {
   flex-direction: column;
   gap: 24px;
   flex: 1;
-  grid-column-start:5 ;
+  grid-column-start: 5;
   grid-column-end: 7;
 }
 .sociallinkscard {
@@ -1407,25 +1414,25 @@ footer {
   .projectcard .projectcard-info {
     flex: 1;
   }
-  .sociallinkscard{
+  .sociallinkscard {
     gap: 16px;
   }
-  .sociallinkscard .contact-link{
+  .sociallinkscard .contact-link {
     padding: 8px 0;
   }
-  .contact-link .link-icon{
+  .contact-link .link-icon {
     width: 16px;
   }
-  .full-card h1{
+  .full-card h1 {
     font-size: 5vw;
   }
-  .full-card p{
+  .full-card p {
     font-size: 2vw;
   }
-  .viewresumecard h1{
+  .viewresumecard h1 {
     font-size: 4vw;
   }
-  .viewresumecard p{
+  .viewresumecard p {
     font-size: 2vw;
   }
 }
@@ -1506,10 +1513,10 @@ footer {
     width: 100%;
     border-radius: 24px;
   }
-  .sociallinkscard .contact-link{
+  .sociallinkscard .contact-link {
     padding: 8px;
   }
-  .sociallinkscard{
+  .sociallinkscard {
     padding: 16px;
   }
 }
@@ -1557,6 +1564,9 @@ footer {
   .social-links-hero-image {
     display: none;
   }
+  .skills-container {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  }
   .skills-hero-image {
     position: absolute;
     bottom: 0;
@@ -1567,6 +1577,11 @@ footer {
   }
   .skills-icon {
     height: 24px;
+  }
+  .shapes {
+    position: absolute;
+    left: 0;
+    top: 100px;
   }
   .companies-container {
     bottom: 3vh;
@@ -1712,31 +1727,38 @@ footer {
     font-size: 1.5vw;
   }
 
-  .full-card,.half-card-container{
+  .full-card,
+  .half-card-container {
     grid-column-start: 1;
     grid-column-end: 7;
   }
-  .full-card,.viewresumecard,.sociallinkscard{
+  .full-card,
+  .viewresumecard,
+  .sociallinkscard {
     min-height: 250px;
   }
   .full-card h1,
-  .viewresumecard h1{
+  .viewresumecard h1 {
     font-size: 8vw;
   }
   .full-card p,
-  .viewresumecard p{
+  .viewresumecard p {
     font-size: 3vw;
   }
-  .callmecard{
-    background-position-x:0px ;
+  .callmecard {
+    background-position-x: 0px;
   }
-  .mailmecard{
-    background-position-y:-200px ;
+  .mailmecard {
+    background-position-y: -200px;
   }
-  .full-card::after{
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0));
+  .full-card::after {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.75) 0%,
+      rgba(0, 0, 0, 0)
+    );
   }
-  .sociallinkscard{
+  .sociallinkscard {
     padding: 32px;
     gap: 32px;
   }
@@ -1745,7 +1767,7 @@ footer {
     padding: 16px;
     font-size: 1.2rem;
   }
-  .contact-link .link-icon{
+  .contact-link .link-icon {
     width: 24px;
   }
 }
@@ -1911,7 +1933,8 @@ footer {
     font-size: 1rem;
   }
   .shapes {
-    top: -5rem;
+    top: 100px;
+
     width: 50%;
   }
   .pentool {
@@ -1988,20 +2011,18 @@ footer {
     margin-top: 15vh;
   }
 
-
   .full-card h1,
-  .viewresumecard h1{
+  .viewresumecard h1 {
     font-size: 10vw;
   }
   .full-card p,
-  .viewresumecard p{
+  .viewresumecard p {
     font-size: 4vw;
   }
-  .sociallinkscard{
+  .sociallinkscard {
     padding: 24px;
     gap: 24px;
   }
-  
 }
 
 @media screen and (max-width: 450px) {
@@ -2028,7 +2049,7 @@ footer {
     font-size: 1.2rem;
   }
 
-  .grid-container{
+  .grid-container {
     gap: 16px;
   }
   .sociallinkscard .contact-link {
@@ -2036,13 +2057,21 @@ footer {
     padding: 12px;
     font-size: 1rem;
   }
-  .full-card,.viewresumecard,.sociallinkscard,.dp-container img, .ux-design-portfolio-container,.visual-design-portfolio-container, .programming-portfolio-container,.actual-skills-container{
+  .full-card,
+  .viewresumecard,
+  .sociallinkscard,
+  .dp-container img,
+  .ux-design-portfolio-container,
+  .visual-design-portfolio-container,
+  .programming-portfolio-container,
+  .actual-skills-container {
     border-radius: 12px;
   }
-  .full-card::after,.viewresumecard::after{
+  .full-card::after,
+  .viewresumecard::after {
     border-radius: 12px;
   }
-  .contact-link .link-icon{
+  .contact-link .link-icon {
     width: 16px;
   }
 }

@@ -20,8 +20,10 @@ const Home = () => {
       transition={{ ease: "easeOut", duration: 2 }}
     >
       <div className="home-container">
-        <Hero />
-        <Skills />
+        <div className="unwanted-group">
+          <Hero />
+          <Skills />
+        </div>
         <GlanceAtWork />
         <Quote />
         <Connect />
